@@ -6,8 +6,8 @@ const app = express();
 
 mongoose.connect(
     "mongodb://localhost:27017/nodeapi", 
-    { useNewUrlParser: true, 
-});
+    { useNewUrlParser: true }
+);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
